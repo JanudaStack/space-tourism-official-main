@@ -1,0 +1,58 @@
+body {
+    background-image: url(../../assets/home/background-home-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100svh; */
+}
+
+.hero-section {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.hero-text-content {
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-header {
+    font-family: var(--ff-serif-headings); /* Use the serif font for headings */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.space-text {
+    font-family: var(--ff-serif-headings);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.hero-paragraph {
+    font-family: var(--ff-sans-normal-para);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.explore {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.explore-btn {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: var(--clr-highlight);
+    color: var(--clr-dark);
+    font-size: 1.5rem;
+    font-family: var(--ff-serif-headings);
+    text-transform: uppercase;
+    text-align: center;
+}
