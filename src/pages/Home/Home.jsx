@@ -21,7 +21,9 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="explore">
-                    <button className="explore-btn">Explore</button>
+                    <button className="explore-btn">
+                        <span className="explore-text">Explore</span>
+                    </button>
                 </div>
             </section>
         </>

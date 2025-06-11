@@ -18,16 +18,17 @@ body {
     padding: 0 1.2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .hero-header {
     /* font-size: 1.3rem; */
     font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
-    font-family: var(--ff-sans-normal-para);
+    font-family: var(--ff-sans-condensed-nav);
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
 .space-text {
@@ -43,6 +44,7 @@ body {
     text-align: center;
     width: 85%;
     margin: 0 auto;
+    line-height: 2.3rem;
 }
 
 .explore {
@@ -66,6 +68,7 @@ body {
 }
 
 .explore-btn:hover {
+    letter-spacing: 0.2rem;
     color: var(--clr-highlight);
     background-color: transparent;
     backdrop-filter: blur(15px);
@@ -82,15 +85,8 @@ body {
 
 @media (min-width: 1024px) {
     body {
-        overflow: hidden;
         height: 100svh;
         background-image: url('../../assets/home/background-home-desktop.jpg');
-    }
-
-    .hero-section {
-        padding: 8rem 5rem 0 5rem;
-        flex-direction: row;
-        align-items: flex-end;
     }
 
     .hero-header,
@@ -99,13 +95,19 @@ body {
         text-align: left;
     }
 
-    .hero-paragraph {
-        width: 70%;
-        margin: 0;
+    .hero-section {
+        padding: 8rem 6rem 0 6rem;
+        flex-direction: row;
+        align-items: flex-end;
     }
 
     .hero-text-content {
-        padding-left: 5rem;
+        padding: 0;
+    }
+
+    .hero-paragraph {
+        width: 70%;
+        margin: 0;
     }
 
     .explore-btn {

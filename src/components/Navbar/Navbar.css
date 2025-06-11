@@ -44,7 +44,7 @@
     }
 
     .nav-links-tablet li a {
-        font-family: var(--ff-sans-normal-para);
+        font-family: var(--ff-sans-condensed-nav);
         text-transform: uppercase;
         letter-spacing: 0.1rem;
     }
@@ -67,7 +67,7 @@
 
 @media (min-width: 1024px) {
     .navigation-bar {
-        padding: 3rem 0 0 4rem;
+        padding: 2rem 0 0 4rem;
     }
 
     .tablet-navbar {
@@ -85,13 +85,15 @@
 
     .nav-links-desktop {
         display: flex;
-        gap: 6rem;
+        gap: 8rem;
     }
 
     .nav-links-desktop li a {
-        font-family: var(--ff-sans-normal-para);
+        font-weight: 300;
+        font-size: clamp(1rem, 2vw, 1.2em);
+        font-family: var(--ff-sans-condensed-nav);
         text-transform: uppercase;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.15rem;
         word-spacing: 0.2rem;
     }
 
