@@ -4,6 +4,9 @@ import './Home.css';
 const Home = () => {
     return (
         <>
+            <div className="comet-container">
+                <div className="comet"></div>
+            </div>
             <section className="hero-section">
                 <div className="hero-text-content">
                     <h1 className="hero-header">
@@ -17,8 +20,8 @@ const Home = () => {
                         we’ll give you a truly out of this world experience!
                     </p>
                 </div>
-                <div class="explore">
-                    <button class="explore-btn">Explore</button>
+                <div className="explore">
+                    <button className="explore-btn">Explore</button>
                 </div>
             </section>
         </>

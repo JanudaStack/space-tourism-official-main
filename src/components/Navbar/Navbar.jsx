@@ -1,4 +1,6 @@
 import React from 'react';
+import hamburgerIcon from '../../assets/shared/icon-hamburger.svg';
+import siteLogo from '../../assets/shared/logo.svg';
 import './Navbar.css';
 
 function Navbar() {
@@ -8,10 +10,7 @@ function Navbar() {
                 <nav className="navigation-bar">
                     <div className="site-logo">
                         <a href="#">
-                            <img
-                                src="/src/assets/shared/logo.svg"
-                                alt="site-logo"
-                            />
+                            <img src={siteLogo} alt="site-logo" />
                         </a>
                     </div>
                     <div className="desktop-navbar">
@@ -64,10 +63,7 @@ function Navbar() {
                     </div>
                     <div className="menu-btn-mobile">
                         <button className="hamburger-menu">
-                            <img
-                                src="src/assets/shared/icon-hamburger.svg"
-                                alt="hamburger-icon"
-                            />
+                            <img src={hamburgerIcon} alt="hamburger-icon" />
                         </button>
                     </div>
                 </nav>
