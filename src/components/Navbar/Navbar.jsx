@@ -30,19 +30,35 @@ function Navbar() {
                             </li>
                         </ul>
                     </div>
+                    <div className="tablet-navbar">
+                        <ul className="nav-links-tablet">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Destination</a>
+                            </li>
+                            <li>
+                                <a href="#">Crew</a>
+                            </li>
+                            <li>
+                                <a href="#">Technology</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div className="mobile-navbar">
                         <ul className="nav-links-mobile">
                             <li>
-                                <a href="#">00 Home</a>
+                                <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#">01 Destination</a>
+                                <a href="#">Destination</a>
                             </li>
                             <li>
-                                <a href="#">02 Crew</a>
+                                <a href="#">Crew</a>
                             </li>
                             <li>
-                                <a href="#">03 Technology</a>
+                                <a href="#">Technology</a>
                             </li>
                         </ul>
                     </div>

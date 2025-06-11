@@ -7,7 +7,7 @@ body {
 }
 
 .hero-section {
-    padding-top: 2rem;
+    padding-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,11 +19,15 @@ body {
     padding: 0 1.2rem;
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     gap: 2rem;
 }
 
 .hero-header {
-    font-family: var(--ff-serif-headings); /* Use the serif font for headings */
+    font-size: 1.3rem;
+    /* font-size: clamp(1.333rem, 2vw + 1rem, 2rem); */
+    font-family: var(--ff-sans-normal-para);
+    font-weight: 300;
     text-align: center;
     text-transform: uppercase;
 }
@@ -32,13 +36,15 @@ body {
     font-family: var(--ff-serif-headings);
     text-align: center;
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: clamp(6rem, 14vw + 1rem, 12rem);
 }
 
 .hero-paragraph {
     font-family: var(--ff-sans-normal-para);
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
     text-align: center;
-    font-size: 1.2rem;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .explore {
@@ -55,4 +61,98 @@ body {
     font-family: var(--ff-serif-headings);
     text-transform: uppercase;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: hsla(0, 0%, 100%, 0.822);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .navigation-bar {
+        padding: 0 0 0 2rem;
+    }
+    /* Tablet navbar */
+    .tablet-navbar {
+        display: block;
+        margin-left: auto;
+        background-color: hsla(0, 0%, 100%, 0.078);
+        padding: 2rem 1.5rem;
+    }
+
+    .nav-links-tablet {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nav-links-tablet li a {
+        font-family: var(--ff-sans-normal-para);
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navigation-bar {
+        padding: 3rem 0 0 2rem;
+    }
+
+    .tablet-navbar {
+        display: none;
+    }
+
+    .desktop-navbar {
+        display: block;
+        margin-left: auto;
+        background-color: hsla(0, 0%, 100%, 0.078);
+        padding: 3rem 2rem;
+    }
+
+    .nav-links-desktop {
+        display: flex;
+        gap: 6rem;
+    }
+
+    .nav-links-desktop li a {
+        font-family: var(--ff-sans-normal-para);
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.2rem;
+    }
+
+    .hero-section {
+        padding: 8rem 5rem 0 5rem;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .hero-header,
+    .hero-paragraph,
+    .space-text {
+        text-align: left;
+    }
+
+    .hero-paragraph {
+        width: 70%;
+        margin: 0;
+    }
+
+    .hero-text-content {
+        padding-left: 5rem;
+    }
+
+    .explore-btn {
+        height: 14rem;
+        width: 14rem;
+    }
 }
