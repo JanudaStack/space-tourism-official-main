@@ -11,6 +11,102 @@
 .navigation-bar {
     padding: 2rem 1.2rem;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
+}
+
+.menu-btn-mobile {
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .menu-btn-mobile {
+        display: none;
+    }
+
+    .navigation-bar {
+        padding: 0 0 0 2rem;
+    }
+
+    /* Tablet navbar */
+    .tablet-navbar {
+        display: block;
+        margin-left: auto;
+        background-color: hsla(0, 0%, 100%, 0.078);
+        padding: 2rem 1.5rem;
+        backdrop-filter: blur(8px); /* Apply glass effect blur */
+        -webkit-backdrop-filter: blur(8px); /* Safari compatibility */
+    }
+
+    .nav-links-tablet {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nav-links-tablet li a {
+        font-family: var(--ff-sans-normal-para);
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+
+    .nav-links-tablet li a::after {
+        content: '';
+        display: block;
+        height: 3px;
+        background-color: var(--clr-highlight);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        position: relative;
+        top: 2rem;
+    }
+
+    .nav-links-tablet li a:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+@media (min-width: 1024px) {
+    .navigation-bar {
+        padding: 3rem 0 0 4rem;
+    }
+
+    .tablet-navbar {
+        display: none;
+    }
+
+    .desktop-navbar {
+        display: block;
+        margin-left: auto;
+        background-color: hsla(0, 0%, 100%, 0.078);
+        padding: 3rem 2rem;
+        backdrop-filter: blur(8px); /* Apply glass effect blur */
+        -webkit-backdrop-filter: blur(8px); /* Safari compatibility */
+    }
+
+    .nav-links-desktop {
+        display: flex;
+        gap: 6rem;
+    }
+
+    .nav-links-desktop li a {
+        font-family: var(--ff-sans-normal-para);
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.2rem;
+    }
+
+    .nav-links-desktop li a::after {
+        content: '';
+        display: block;
+        height: 3px;
+        background-color: var(--clr-highlight);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        position: relative;
+        top: 3rem;
+    }
+
+    .nav-links-desktop li a:hover::after {
+        transform: scaleX(1);
+    }
 }
