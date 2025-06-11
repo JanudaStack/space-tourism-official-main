@@ -1,0 +1,97 @@
+body {
+    /* height: 100svh; */
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.destination-section {
+    padding: 2rem 1.5rem;
+}
+
+.destination-title {
+    font-family: var(--ff-sans-condensed-nav);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.destination-container {
+    margin-top: 3rem;
+}
+
+.destination-planet-nav {
+    display: block;
+    padding: 3rem 0 0;
+    transition: all 0.3s ease;
+}
+
+.destination-planet-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.destination-planet-nav-links li a {
+    font-family: var(--ff-sans-condensed-nav);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.planet-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.destination-planet-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: var(--ff-serif-headings);
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+}
+
+.destination-planet-description {
+    text-align: center;
+    line-height: 1.8rem;
+    font-family: var(--ff-sans-normal-para);
+}
+
+.destination-planet-travel-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    /* align-items: center; */
+}
+
+.destination-planet-distance,
+.destination-planet-travel-time {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.destination-travel-info-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--ff-sans-condensed-nav);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.destination-info-value {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--ff-serif-headings);
+    font-size: 2rem;
+}
