@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react()],
-    base: '/space-tourism-react-main/', // Set this to your repository name
+    base: '/space-tourism-official-main/', // Set this to your repository name
 });
