@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css'; // Import CSS module
 import Navbar from '../../components/Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -23,7 +24,7 @@ const Home = () => {
                     <div className={styles['home-explore']}>
                         <button className={styles['home-explore-btn']}>
                             <span className={styles['home-explore-text']}>
-                                Explore
+                                <Link to="/destination">Explore</Link>
                             </span>
                         </button>
                     </div>
