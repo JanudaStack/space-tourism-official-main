@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
     plugins: [react()],
-    base: '/', // Replace <repository-name> with your repo name
-});
+    base: mode === 'production' ? '/space-tourism-official-main/' : '/', // Use different base paths for production and development
+}));
