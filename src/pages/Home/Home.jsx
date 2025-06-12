@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar/Navbar';
 const Home = () => {
     return (
         <>
-            <Navbar />
             <main>
                 <section className={styles['home-hero-section']}>
                     <div className={styles['home-hero-text-content']}>
