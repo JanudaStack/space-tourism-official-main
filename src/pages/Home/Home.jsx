@@ -22,11 +22,12 @@ const Home = () => {
                         </p>
                     </div>
                     <div className={styles['home-explore']}>
-                        <button className={styles['home-explore-btn']}>
-                            <span className={styles['home-explore-text']}>
-                                <Link to="/destination">Explore</Link>
-                            </span>
-                        </button>
+                        <Link
+                            to="/destination"
+                            className={styles['home-explore-btn']}
+                        >
+                            Explore
+                        </Link>
                     </div>
                 </section>
             </main>
