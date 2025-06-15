@@ -8,7 +8,9 @@ const Crew = () => {
             <main>
                 <section className={styles['crew-section']}>
                     <div className={styles['crew-section-header']}>
-                        <h1> 02 Meet your crew</h1>
+                        <h1 className={styles['crew-section-header']}>
+                            02 Meet your crew
+                        </h1>
                     </div>
                     <div className={styles['crew-content-wrapper']}>
                         <div className={styles['crew-container']}>
@@ -22,11 +24,14 @@ const Crew = () => {
                                     </h2>
                                 </div>
                                 <div className={styles['crew-info']}>
-                                    Anousheh Ansari is an Iranian American
-                                    engineer and co-founder of Prodea Systems.
-                                    Ansari was the fourth self-funded space
-                                    tourist, the first self-funded woman to fly
-                                    to the ISS, and the first Iranian in space.
+                                    <p id={styles['crew-info']}>
+                                        Anousheh Ansari is an Iranian American
+                                        engineer and co-founder of Prodea
+                                        Systems. Ansari was the fourth
+                                        self-funded space tourist, the first
+                                        self-funded woman to fly to the ISS, and
+                                        the first Iranian in space.
+                                    </p>
                                 </div>
                                 <div className={styles['crew-nav']}></div>
                             </div>
