@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Crew.module.css'; // Import CSS module
-import CrewImg from '../../assets/crew/image-anousheh-ansari.webp';
+import CrewImageAnoushehAnsari from '../../assets/crew/image-anousheh-ansari.webp';
 
 const Crew = () => {
     return (
@@ -36,7 +36,10 @@ const Crew = () => {
                                 <div className={styles['crew-nav']}></div>
                             </div>
                             <picture className={styles['crew-img']}>
-                                <img src={CrewImg} alt="Anousheh Ansari" />
+                                <img
+                                    src={CrewImageAnoushehAnsari}
+                                    alt="Anousheh Ansari"
+                                />
                             </picture>
                         </div>
                     </div>
