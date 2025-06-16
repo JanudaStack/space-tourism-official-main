@@ -7,7 +7,7 @@ const Crew = () => {
         <>
             <main>
                 <section className={styles['crew-section']}>
-                    <div className={styles['crew-section-header']}>
+                    <div className={styles['crew-section-header-container']}>
                         <h1 className={styles['crew-section-header']}>
                             02 Meet your crew
                         </h1>

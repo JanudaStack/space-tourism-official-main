@@ -20,8 +20,8 @@
 }
 
 .crew-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .crew-content {
@@ -30,7 +30,7 @@
 }
 
 .crew-header {
-    margin-top: 2rem;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,19 +38,60 @@
 }
 
 .crew-title {
+    color: var(--clr-light-dim);
+    font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
     font-family: var(--ff-serif-headings);
     text-transform: uppercase;
     font-weight: 300;
 }
 
 .crew-name {
+    font-size: clamp(2rem, 3vw, 3.5rem);
     font-family: var(--ff-serif-headings);
     font-weight: 300;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #crew-info {
     padding: 2rem 1.5rem;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
     font-family: var(--ff-sans-normal-para);
     text-align: center;
+    text-transform: uppercase;
+    color: var(--clr-light-dim);
+}
+
+.crew-img {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .crew-section {
+        padding: 20rem 2.5rem 0;
+    }
+
+    .crew-section-header {
+        text-align: left;
+    }
+
+    .crew-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .crew-content {
+        justify-content: center;
+    }
+
+    .crew-header {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    #crew-info {
+        text-align: left;
+        padding: 2rem 0;
+        width: 80%;
+    }
 }

@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 12rem;
+    padding: 12rem 1rem 0;
 }
 
 .destination-title {
