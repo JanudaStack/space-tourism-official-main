@@ -60,7 +60,22 @@ const Crew = () => {
                                         {selectedMember.info}
                                     </p>
                                 </div>
-                                <div className={styles['crew-nav']}></div>
+                                <div className={styles['crew-nav']}>
+                                    <ul className={styles['crew-nav-dots']}>
+                                        <li>
+                                            <button></button>
+                                        </li>
+                                        <li>
+                                            <button></button>
+                                        </li>
+                                        <li>
+                                            <button></button>
+                                        </li>
+                                        <li>
+                                            <button></button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <picture className={styles['crew-img']}>
                                 <img
