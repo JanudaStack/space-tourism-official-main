@@ -94,3 +94,22 @@
     text-align: center;
     color: var(--clr-light-dim);
 }
+
+/* Styles for Tablets */
+@media (min-width: 768px) {
+    .technology-section {
+        background: url('../../assets/technology/background-technology-tablet.jpg');
+    }
+}
+
+@media (min-width: 1024px) {
+    .technology-section {
+        background-image: url('../../assets/technology/background-technology-desktop.jpg');
+        /* height: 100svh; */
+        padding: 20rem 0 5rem;
+    }
+
+    .technology-content-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
