@@ -104,6 +104,7 @@
 /* Styles for Tablets */
 @media (min-width: 768px) {
     .technology-section {
+        background-size: cover;
         background: url('../../assets/technology/background-technology-tablet.jpg');
     }
 
@@ -116,8 +117,9 @@
 
 @media (min-width: 1024px) {
     .technology-section {
+        background-size: cover;
         background-image: url('../../assets/technology/background-technology-desktop.jpg');
-        /* height: 100svh; */
+        background-repeat: no-repeat;
         padding: 20rem 0 5rem;
     }
 
@@ -167,5 +169,15 @@
     .vehicle-name,
     .vehicle-content {
         text-align: left;
+    }
+}
+
+@media (min-width: 1270px) {
+    .header-text {
+        padding: 0 5rem 5rem;
+    }
+
+    .tech-content-nav-mobile {
+        padding-left: 5rem;
     }
 }
