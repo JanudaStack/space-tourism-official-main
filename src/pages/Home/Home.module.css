@@ -1,9 +1,8 @@
 .home-hero-section {
     background-image: url('../../assets/home/background-home-mobile.jpg');
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100svh;
+
     padding-top: 12rem;
     display: flex;
     align-items: center;
