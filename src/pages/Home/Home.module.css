@@ -2,7 +2,7 @@
     background-image: url('../../assets/home/background-home-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
+    min-height: 100vh;
     padding-top: 12rem;
     display: flex;
     align-items: center;
