@@ -2,7 +2,7 @@
     background-image: url('../../assets/home/background-home-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 100svh;
     padding-top: 12rem;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@
     .home-hero-section {
         background-image: url('../../assets/home/background-home-desktop.jpg');
         height: 100svh;
-        padding: 8rem 6rem 0 6rem;
+        padding: 0 2rem;
         flex-direction: row;
         align-items: flex-end;
     }
@@ -106,5 +106,11 @@
     .home-explore-btn {
         height: 14rem;
         width: 14rem;
+    }
+}
+
+@media (min-width: 1270px) {
+    .home-hero-section {
+        padding: 0 4rem 2rem;
     }
 }

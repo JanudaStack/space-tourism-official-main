@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import hamburgerIcon from '../../assets/shared/icon-hamburger.svg';
 import siteLogo from '../../assets/shared/logo.svg';
+import closeIcon from '../../assets/shared/icon-close.svg';
 import './Navbar.css';
 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => setMenuOpen(!menuOpen);
+    const closeMenu = () => setMenuOpen(false);
+
     return (
         <header className="site-header">
             <nav className="navigation-bar">
@@ -46,9 +52,38 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="menu-btn-mobile">
-                    <button className="hamburger-menu">
-                        <img src={hamburgerIcon} alt="hamburger-icon" />
+                    <button className="hamburger-menu" onClick={toggleMenu}>
+                        <img
+                            src={menuOpen ? closeIcon : hamburgerIcon}
+                            alt="menu-icon"
+                        />
                     </button>
+                </div>
+                <div
+                    className={`mobile-navbar ${menuOpen ? 'open' : 'closed'}`}
+                >
+                    <ul className="nav-links-mobile">
+                        <li>
+                            <Link to="/" onClick={closeMenu}>
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/destination" onClick={closeMenu}>
+                                Destination
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/crew" onClick={closeMenu}>
+                                Crew
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/technology" onClick={closeMenu}>
+                                Technology
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
