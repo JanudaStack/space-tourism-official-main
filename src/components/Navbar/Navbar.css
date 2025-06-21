@@ -1,5 +1,4 @@
 .site-header {
-    /* overflow: hidden; */
     display: block;
     position: relative;
     width: 100%;
@@ -64,6 +63,9 @@
 }
 
 @media (min-width: 768px) {
+    .site-header {
+        overflow: auto;
+    }
     .menu-btn-mobile {
         display: none;
     }
