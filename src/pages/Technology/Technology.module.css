@@ -50,8 +50,8 @@
 .nav-buttons-mobile button {
     border: 1px solid var(--clr-light);
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     font-size: 1rem;
     transition: 0.27s ease;
 }
@@ -149,8 +149,8 @@
     }
 
     .nav-buttons-mobile button {
-        width: 3rem; /* Larger size for tablets */
-        height: 3rem;
+        width: 4rem; /* Larger size for tablets */
+        height: 4rem;
         font-size: 1.5rem; /* Larger font size */
     }
 }
@@ -173,8 +173,8 @@
     }
 
     .nav-buttons-mobile button {
-        width: 4rem; /* Larger size for desktops */
-        height: 4rem;
+        width: 5rem; /* Larger size for desktops */
+        height: 5rem;
         font-size: 2rem; /* Larger font size */
     }
 
