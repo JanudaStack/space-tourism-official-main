@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 10rem 0 0;
-    /* height: 100svh; */
+    min-height: 100svh;
 }
 
 .header-text {
@@ -140,6 +140,14 @@
         background: url('../../assets/technology/background-technology-tablet.jpg');
     }
 
+    .tech-content-nav-mobile {
+        padding: 3.5rem;
+    }
+
+    .tech-content {
+        padding: 0 6rem 2rem;
+    }
+
     .nav-buttons-mobile button {
         width: 3rem; /* Larger size for tablets */
         height: 3rem;
@@ -175,6 +183,10 @@
         justify-content: center;
     }
 
+    .tech-content {
+        padding: 0;
+    }
+
     .technology-img {
         justify-content: flex-end;
     }
@@ -189,7 +201,7 @@
 
     .content-wrapper {
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
         align-items: center;
     }
 
@@ -210,6 +222,6 @@
     }
 
     .tech-content-nav-mobile {
-        padding-left: 5rem;
+        padding: 0 0 0 5rem;
     }
 }
