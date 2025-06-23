@@ -1,6 +1,7 @@
 .site-header {
     display: block;
     position: relative;
+    overflow-x: hidden;
     width: 100%;
     top: 0;
     left: 0;
@@ -51,11 +52,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
 }
 
 .nav-links-mobile li {
-    padding-left: 2rem;
     font-size: 2.5rem;
     font-family: var(--ff-sans-condensed-nav);
     text-transform: uppercase;
