@@ -39,7 +39,7 @@
 .tech-content-nav-mobile {
     display: flex;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
 }
 
 .nav-buttons-mobile {
@@ -52,7 +52,7 @@
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
     transition: 0.27s ease;
 }
 
@@ -71,6 +71,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .tech-content-header {
@@ -148,10 +149,14 @@
         padding: 0 6rem 2rem;
     }
 
+    .nav-buttons-mobile {
+        gap: 6rem;
+    }
+
     .nav-buttons-mobile button {
         width: 4rem; /* Larger size for tablets */
         height: 4rem;
-        font-size: 1.5rem; /* Larger font size */
+        font-size: 1.6rem; /* Larger font size */
     }
 }
 
