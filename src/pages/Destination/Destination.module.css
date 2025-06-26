@@ -3,11 +3,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 12rem 1rem 0;
+    padding: 12rem 1.5rem 0;
     min-height: 100svh;
 }
 
-.destination-title {
+.destination-title-font {
     font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
     font-family: var(--ff-sans-condensed-nav);
     font-weight: 300;
@@ -159,13 +159,13 @@
 
 @media (min-width: 1024px) {
     .destination-section {
-        padding-top: 15rem;
+        padding: 15rem 0 0;
         background-image: url('../../assets/destination/background-destination-desktop.jpg');
     }
 
-    .destination-title {
+    .destination-title-font {
         text-align: left;
-        padding-left: 4rem;
+        padding-left: 8rem;
     }
 
     .destination-content-wrapper {

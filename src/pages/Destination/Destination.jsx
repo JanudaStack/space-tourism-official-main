@@ -58,7 +58,7 @@ const Destination = () => {
             <main>
                 <section className={styles['destination-section']}>
                     <div className={styles['destination-title']}>
-                        <h1 className={styles['destination-title']}>
+                        <h1 className={styles['destination-title-font']}>
                             01 Pick your destination
                         </h1>
                     </div>
