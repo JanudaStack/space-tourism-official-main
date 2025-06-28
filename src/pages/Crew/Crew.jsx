@@ -65,6 +65,7 @@ const Crew = () => {
                                         ? styles['fade-out']
                                         : styles['fade-in']
                                 }`}
+                                data-aos="fade-down"
                             >
                                 <div className={styles['crew-header']}>
                                     <h3 className={styles['crew-title']}>

@@ -104,7 +104,10 @@ const Technology = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className={styles['tech-content']}>
+                            <div
+                                className={styles['tech-content']}
+                                data-aos="fade-down"
+                            >
                                 <div className={styles['tech-content-header']}>
                                     <h4 className={styles['header-title']}>
                                         The Terminology...

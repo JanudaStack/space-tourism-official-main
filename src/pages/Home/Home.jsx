@@ -8,7 +8,10 @@ const Home = () => {
         <>
             <main>
                 <section className={styles['home-hero-section']}>
-                    <div className={styles['home-hero-text-content']}>
+                    <div
+                        className={styles['home-hero-text-content']}
+                        data-aos="fade-right"
+                    >
                         <h1 className={styles['home-hero-header']}>
                             So, you want to travel to <br />
                         </h1>
